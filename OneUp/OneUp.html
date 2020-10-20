@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+      body{
+        background-color: #161E2B;
+      }
+
+      #big-1,#big-2,#big-3,#small-3,#small-4 {
+        animation: left-to-right 7s ease-in-out infinite;
+      }
+
+      #small-1,#small-2,#big-4,#big-5,#big-6 {
+        animation: right-to-left 7s ease-in-out infinite;
+      }
+
+      #eye {
+        animation: wander 20s ease-in-out infinite;
+      }
+
+      #background {
+        animation: expand 10s ease-in-out infinite;
+      }
+
+      #decoration * {
+        animation: expand2 10s ease-in-out infinite;
+      }
+
+      #n-1, #n-2, #e-3, #e-4, #u-1, #u-2, #u-7, #u-8, #p-1, #p-2, #p-5 {
+        animation: left-to-rightN 4s ease-in-out infinite;
+      }
+
+      #n-3, #n-4, #n-5, #e-1, #e-2, #e-5, #e-6, #u-3, #u-4, #u-5, #u-6, #p-6 {
+        animation: right-to-leftN 4s ease-in-out infinite;
+      }
+
+      @keyframes left-to-right {
+        0% {transform: translate(50px);}
+        50% {transform: translate(100px);}
+        100% {transform: translate(50px);}
+      }
+
+      @keyframes right-to-left {
+        0% {transform: translate(-25px);}
+        50% {transform: translate(-75px);}
+        100% {transform: translate(-25px);}
+      }
+
+      @keyframes wander {
+        0% {transform: translate(0px) scale(1);}
+        10% {transform: translate(10px, 10px);}
+        20% {transform: translate(0px);}
+        30% {transform: translate(0px);}
+        40% {transform: translate(-10px, -10px);}
+        50% {transform: translate(-20px);}
+        60% {transform: translate(0px);}
+        70% {transform: translate(-10px, -10px);}
+        80% {transform: translate(-10px, -10px) scale(1.02);}
+        90% {transform: translate(0px) scale(0.95);}
+        100% {transform: translate(0px) scale(1);}
+
+      }
+
+      @keyframes expand {
+        0% {transform: scale(1);}
+        10% {transform: scale(1.005);}
+        20% {transform: scale(0.995);}
+        30% {transform: scale(1.001);}
+        40% {transform: scale(0.998);}
+        50% {transform: scale(1.010);}
+        60% {transform: scale(1);}
+        70% {transform: scale(1);}
+        80% {transform: scale(1.5);}
+        90% {transform: scale(0.5);}
+        100% {transform: scale(1);}
+
+      }
+
+      @keyframes expand2 {
+        0% {transform: scale(1);}
+        10% {transform: scale(1.005);}
+        20% {transform: scale(0.995);}
+        30% {transform: scale(1.001);}
+        40% {transform: scale(0.998);}
+        50% {transform: scale(1.010);}
+        60% {transform: scale(1);}
+        70% {transform: scale(1.010);}
+        100% {transform: scale(1);}
+
+      }
+
+      @keyframes left-to-rightN {
+        0% {transform: translate(0px);}
+        50% {transform: translate(30px);}
+        100% {transform: translate(0px);}
+      }
+
+      @keyframes right-to-leftN {
+        0% {transform: translate(0px);}
+        50% {transform: translate(-20px);}
+        100% {transform: translate(0px);}
+      }
+
+
+      #Word {
+        position: relative;
+        left: 300px;
+        top: 100px;
+      }
+
+      #O-container {
+        position: relative;
+      }
+
+      #N-container {
+        position: relative;
+        left: 450px;
+        top: 280px;
+        width: 0;
+      }
+
+      #E-container {
+        position: relative;
+        left: 605px;
+        top: 95px;
+        width: 0;
+      }
+
+      #U-container {
+        position: relative;
+        left: 820px;
+        top: -80px;
+        width: 0;
+      }
+
+      #P-container {
+        position: relative;
+        left: 970px;
+        top: -235px;
+        width: 0;
+      }
+
+      #decoration {
+        position: absolute;
+        left: 200px;
+        top: 0px;
+        width: 0;
+      }
+
+      #O {
+       position: absolute;
+       top: 65px;
+       left: -120px;
+      }
+
+      #Background {
+        position: absolute;
+        transform: scale(1.2);
+      }
+
+    </style>
+  </head>
+  <body onload="myFunction()">
+
+<div id="Word">
+  <div id="O-container">
+    <div id="Background">
+      <img id="background" width="560" src="Pics/OneUpOBackground.svg" alt="">
+    </div>
+    <div id="O">
+     <svg width="800" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     	 viewBox="0 0 912.1 468" style="enable-background:new 0 0 912.1 468;" xml:space="preserve">
+       <defs>
+      <filter id="shadow" x="0" y="0" width="200%" height="200%">
+        <feDropShadow dx="8" dy="8" stdDeviation="0" flood-color="#0A0F16" flood-opacity="0.8" />
+      </filter>
+    </defs>
+     <style type="text/css">
+     	.st0{fill:#FFFFFF;}
+     	.st1{fill:#161E2B;}
+     </style>
+     <path id="big-1" class="st0" d="M218.6,187.3H76.3c-5.4,0-9.7-4.4-9.7-9.7v0c0-5.4,4.4-9.7,9.7-9.7h142.2c5.4,0,9.7,4.4,9.7,9.7v0
+       C228.3,182.9,223.9,187.3,218.6,187.3z" filter="url(#shadow)"/>
+     <path id="big-2" class="st0" d="M218.6,261.9H76.3c-5.4,0-9.7-4.4-9.7-9.7v0c0-5.4,4.4-9.7,9.7-9.7h142.2c5.4,0,9.7,4.4,9.7,9.7v0
+       C228.3,257.6,223.9,261.9,218.6,261.9z" filter="url(#shadow)"/>
+     <path id="big-3" class="st0" d="M218.6,224.8H76.3c-5.4,0-9.7-4.4-9.7-9.7v0c0-5.4,4.4-9.7,9.7-9.7h142.2c5.4,0,9.7,4.4,9.7,9.7v0
+       C228.3,220.4,223.9,224.8,218.6,224.8z" filter="url(#shadow)"/>
+     <path id="big-4" class="st0" d="M842.1,187.3H699.9c-5.4,0-9.7-4.4-9.7-9.7v0c0-5.4,4.4-9.7,9.7-9.7h142.2c5.4,0,9.7,4.4,9.7,9.7v0
+       C851.9,182.9,847.5,187.3,842.1,187.3z" filter="url(#shadow)"/>
+     <path id="big-5" class="st0" d="M842.1,261.9H699.9c-5.4,0-9.7-4.4-9.7-9.7v0c0-5.4,4.4-9.7,9.7-9.7h142.2c5.4,0,9.7,4.4,9.7,9.7v0
+       C851.9,257.6,847.5,261.9,842.1,261.9z" filter="url(#shadow)"/>
+     <path id="big-6" class="st0" d="M842.1,224.5H699.9c-5.4,0-9.7-4.4-9.7-9.7v0c0-5.4,4.4-9.7,9.7-9.7h142.2c5.4,0,9.7,4.4,9.7,9.7v0
+       C851.9,220.1,847.5,224.5,842.1,224.5z" filter="url(#shadow)"/>
+     <path id="small-1" class="st0" d="M692.4,392.8h-74.8c-3,0-5.4-2.4-5.4-5.4v0c0-3,2.4-5.4,5.4-5.4h74.8c3,0,5.4,2.4,5.4,5.4v0
+       C697.9,390.3,695.4,392.8,692.4,392.8z" filter="url(#shadow)"/>
+     <path id="small-2" class="st0" d="M652.1,414.5h-74.8c-3,0-5.4-2.4-5.4-5.4v0c0-3,2.4-5.4,5.4-5.4h74.8c3,0,5.4,2.4,5.4,5.4v0
+       C657.5,412.1,655.1,414.5,652.1,414.5z" filter="url(#shadow)"/>
+     <path id="small-3" class="st0" d="M310.2,395.7h-92.9c-2.5,0-4.5-2-4.5-4.5v0c0-2.5,2-4.5,4.5-4.5h92.9c2.5,0,4.5,2,4.5,4.5v0
+       C314.7,393.7,312.7,395.7,310.2,395.7z" filter="url(#shadow)"/>
+     <path id="small-4" class="st0" d="M353.7,413.7h-92.9c-2.5,0-4.5-2-4.5-4.5l0,0c0-2.5,2-4.5,4.5-4.5h92.9c2.5,0,4.5,2,4.5,4.5l0,0
+       C358.2,411.6,356.2,413.7,353.7,413.7z" filter="url(#shadow)"/>
+       <path class="st0" d="M661.1,243.2c0,54-22,103.1-57.5,138.8l-0.4,0.4c-3.6,3.6-7.4,7.1-11.3,10.5h-30.7c-3,0-5.4,2.4-5.4,5.4
+       	c0,3,2.4,5.4,5.4,5.4h16.8c-5.5,3.9-11.1,7.5-17,10.9c-28.7,16.3-61.8,25.7-97,25.7c-35.8,0-69.4-9.7-98.4-26.5
+       	c-4.8-2.8-9.5-5.8-14-9h41.1c2.5,0,4.5-2,4.5-4.5c0-2.5-2-4.5-4.5-4.5h-52.9c-3.5-2.9-6.9-5.9-10.2-9c-1.6-1.5-3.1-2.9-4.6-4.4
+       	c-35.7-35.7-57.9-85-57.9-139.1s22.2-103.4,57.9-139.1c35.7-35.7,85-57.9,139.1-57.9C572.5,46.2,661.1,134.9,661.1,243.2z" filter="url(#shadow)"/>
+     <path class="st0" d="M415.1,391.2v18c0,2.5-2,4.5-4.5,4.5H346c-1.3,0-2.4-0.5-3.2-1.3c-0.8-0.8-1.3-1.9-1.3-3.1c0-2.5,2-4.5,4.5-4.5
+     	h46.7c2.5,0,4.5-2,4.5-4.5c0-2.5-2-4.5-4.5-4.5h-87c-1.3,0-2.4-0.5-3.2-1.3c-0.8-0.8-1.3-1.9-1.3-3.2c0-2.5,2-4.5,4.5-4.5h104.9
+     	C413.1,386.8,415.1,388.8,415.1,391.2z"/>
+     <path class="st0" d="M622.1,387.4c0,1.5-0.6,2.9-1.6,3.8c-1,1-2.3,1.6-3.8,1.6h-55.4c-3,0-5.4,2.4-5.4,5.4c0,3,2.4,5.4,5.4,5.4H581
+     	c3,0,5.4,2.4,5.4,5.4c0,1.5-0.6,2.8-1.6,3.8c-1,1-2.3,1.6-3.8,1.6h-41.4c-3,0-5.4-2.4-5.4-5.4v-21.7c0-3,2.4-5.4,5.4-5.4h77.1
+     	C619.7,382,622.1,384.4,622.1,387.4z"/>
+     <path class="st0" d="M286.1,261.9h-68.8c-6,0-10.9-3.9-10.9-8.8v-1.9c0-4.9,4.9-8.8,10.9-8.8h7.9c3,0,5.8-1,7.7-2.6
+     	c2-1.6,3.2-3.8,3.2-6.2c0-4.9-4.9-8.8-10.9-8.8h-8.9c-6,0-10.9-3.9-10.9-8.8v-1.9c0-4.9,4.9-8.8,10.9-8.8h4.9c6,0,10.9-3.9,10.9-8.8
+     	v-0.3c0-4.9-4.9-8.8-10.9-8.8h-5.5c-6,0-10.9-3.9-10.9-8.8v-1.9c0-4.9,4.9-8.8,10.9-8.8h67.1c-1.2,6.2-2.1,12.5-2.7,19
+     	c-0.7,6.9-1,14-1,21.2C279.1,227.2,281.5,245.2,286.1,261.9z"/>
+     <path class="st0" d="M732.4,213.8v1.9c0,4.9-4.9,8.8-14.9,8.4h-9c-2,0.4-6.9,4.4-6.9,9.2v0.3c0,4.9,4.9,8.8,10.9,8.8h12.4
+     	c6,0,10.9,3.9,10.9,8.8v1.9c0,4.9-4.9,8.8-10.9,8.8h-80c-0.2,0-0.5,0-0.7,0c-0.2,0-0.5,0-0.7-0.1c-0.2,0-0.4,0-0.6-0.1
+     	c-0.2,0-0.5-0.1-0.7-0.1c4.5-16.6,6.9-34.5,6.9-53.6c0-7.3-0.3-14.5-1-21.4v0c-0.6-6.4-1.5-12.7-2.7-18.8h83.3
+     	c6,0,10.9,3.9,10.9,8.8v1.9c0,4.9-4.9,8.8-10.9,8.8h-20.1c-3,0-5.7,1-7.7,2.6c-2,1.6-3.2,3.8-3.2,6.2c0,4.9,4.9,8.8,10.9,8.8h13.1
+     	C727.5,205,732.4,208.9,732.4,213.8z"/>
+      <circle id="eye" class="st1" cx="488.1" cy="251.2" r="153"/>
+     </svg>
+   </div>
+  </div>
+  <div id="N-container">
+    <svg width="200" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 viewBox="0 0 227.3 200" style="enable-background:new 0 0 227.3 200;" xml:space="preserve">
+    	 <defs>
+    	<filter id="shadow2" x="0" y="0" width="200%" height="200%">
+    		<feDropShadow dx="10" dy="10" stdDeviation="0" flood-color="#0A0F16" flood-opacity="1" />
+    	</filter>
+    </defs>
+    <style type="text/css">
+    	.st0{fill:#FFFFFF;}
+    </style>
+    <path id="n-1" class="st0" d="M49.5,86.5H17.2c-1.3,0-2.4-1.1-2.4-2.4l0,0c0-1.3,1.1-2.4,2.4-2.4h32.3c1.3,0,2.4,1.1,2.4,2.4l0,0
+    	C51.9,85.4,50.8,86.5,49.5,86.5z"/>
+    <path id="n-2" class="st0" d="M49.5,96.2H17.2c-1.3,0-2.4-1.1-2.4-2.4l0,0c0-1.3,1.1-2.4,2.4-2.4h32.3c1.3,0,2.4,1.1,2.4,2.4l0,0
+    	C51.9,95.1,50.8,96.2,49.5,96.2z"/>
+    <path class="st0" d="M149.1,133.3h15.5c1.4,0,2.6-1.2,2.6-2.6V37.1c0-1.6-1.2-3-3-3h-35.7c-1.4,0-2.8,1.4-2.8,3v52.2
+    	c0,2.7-3.6,3.6-4.9,1.3l-30-53.9c-0.8-1.6-2.8-2.6-4.6-2.6H51.6c-1.7,0-3,1.4-3,3v46.8c0,1.4,1.2,2.6,2.6,2.6h17.7
+    	c1.3,0,2.5,1,2.6,2.3c0.1,1.4-1,2.5-2.4,2.5H51.2c-1.4,0-2.6,1.2-2.6,2.6v76.3c0,1.4,1.2,2.8,2.8,2.8h35.6c1.8,0,3-1.4,3-2.8v-52.5
+    	c0-2.7,3.5-3.6,4.9-1.3l30.2,54c1,1.6,2.8,2.6,4.2,2.6h34.8c1.8,0,3-1.4,3-2.8v-29.5c0-1.4-1.2-2.6-2.6-2.6H149
+    	c-1.4,0-2.5-1.1-2.4-2.5C146.6,134.3,147.8,133.3,149.1,133.3z" filter="url(#shadow2)"/>
+    <path class="st0" d="M81,84.1v9.7c0,1.3-1.1,2.4-2.4,2.4H45.1c-0.7,0-1.3-0.3-1.7-0.7c-0.4-0.4-0.7-1-0.7-1.7c0-1.3,1.1-2.4,2.4-2.4
+    	h23.8c1.3,0,2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4H41c-0.7,0-1.3-0.3-1.7-0.7c-0.4-0.4-0.7-1-0.7-1.7c0-1.3,1.1-2.4,2.4-2.4h37.6
+    	C79.9,81.7,81,82.8,81,84.1z"/>
+    <path class="st0" d="M137,140.5V131c0-1.3,1.1-2.4,2.4-2.4h25.5c0.7,0,1.2,0.3,1.7,0.7c0.4,0.4,0.7,1,0.7,1.7c0,1.3-1.1,2.4-2.4,2.4
+    	h-16c-1.3,0-2.4,1.1-2.4,2.4c0,1.3,1.1,2.4,2.4,2.4h27.3c0.7,0,1.2,0.3,1.7,0.7c0.4,0.4,0.7,1,0.7,1.7c0,1.3-1.1,2.4-2.4,2.4h-36.7
+    	C138.1,142.9,137,141.8,137,140.5z"/>
+    <path class="st0" d="M173.5,64.2h-42.8c-1.2,0-2.2-1-2.2-2.2v-1.2c0-1.2,1-2.2,2.2-2.2h42.8c1.2,0,2.2,1,2.2,2.2V62
+    	C175.7,63.2,174.7,64.2,173.5,64.2z"/>
+    <path id="n-3" class="st0" d="M202.3,142.9h-26.4c-1.3,0-2.4-1.1-2.4-2.4l0,0c0-1.3,1.1-2.4,2.4-2.4h26.4c1.3,0,2.4,1.1,2.4,2.4l0,0
+    	C204.6,141.8,203.6,142.9,202.3,142.9z" />
+    <path id="n-4" class="st0" d="M190.9,133.4h-26.4c-1.3,0-2.4-1.1-2.4-2.4v0c0-1.3,1.1-2.4,2.4-2.4h26.4c1.3,0,2.4,1.1,2.4,2.4v0
+    	C193.3,132.3,192.2,133.4,190.9,133.4z"/>
+    <path id="n-5" class="st0" d="M204.7,64.2h-35.3c-1.6,0-2.8-1.3-2.8-2.8v0c0-1.6,1.3-2.8,2.8-2.8h35.3c1.6,0,2.8,1.3,2.8,2.8v0
+    	C207.5,63,206.2,64.2,204.7,64.2z"/>
+    </svg>
+
+  </div>
+  <div id="E-container">
+    <svg width="200" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 viewBox="0 0 225 217.5" style="enable-background:new 0 0 225 217.5;" xml:space="preserve">
+       <defs>
+     <filter id="shadow3" x="0" y="0" width="200%" height="200%">
+       <feDropShadow dx="10" dy="10" stdDeviation="0" flood-color="#0A0F16" flood-opacity="1" />
+     </filter>
+    </defs>
+    <style type="text/css">
+    	.st0{fill:#FFFFFF;}
+    </style>
+    <g>
+    	<path class="st0" d="M150.6,1064.7h25.1v-12.9c0-1.4-1.4-2.6-3-2.6h-50.1c-2.6,0-4.7-2.1-4.7-4.7v-7.7c0-2.6,2.1-4.7,4.7-4.7h37.1
+    		c1.8,0,3-1.4,3.2-2.6l0.2-28.1c0.2-1.2-0.8-2.6-2.6-2.6h-37.8c-2.6,0-4.7-2.1-4.7-4.7v-6.5c0-2.6,2.1-4.7,4.7-4.7h43.2
+    		c4.2,0,7.7-3.4,7.7-7.7v-13.7h-29.3c-1.1,0-1.9-0.9-1.9-1.9c0-1.1,0.9-1.9,1.9-1.9h29.3v-8c0-1.4-1.4-2.8-3.2-2.8H83.8
+    		c-4.1,0-7.5,3.3-7.5,7.5v57.2h23c1.1,0,1.9,0.9,1.9,1.9c0,1.1-0.9,1.9-1.9,1.9h-23v65.6c0,1.2,0.4,2.3,1.2,3.2c0.6,0.6,1.3,1,2,1
+    		h93.2c1.6,0,3-1.4,3-2.8v-13.9h-25.1c-1.1,0-1.9-0.9-1.9-1.9C148.7,1065.6,149.6,1064.7,150.6,1064.7z"/>
+    	<path class="st0" d="M210.4,1070.6c0,1.1-0.9,1.9-1.9,1.9h-65.6c-1.1,0-1.9-0.9-1.9-1.9v-7.8c0-1.1,0.9-1.9,1.9-1.9h39
+    		c0.5,0,1,0.2,1.4,0.6c0.4,0.4,0.6,0.8,0.6,1.4c0,1.1-0.9,2-1.9,2h-31.2c-1.1,0-1.9,0.9-1.9,1.9c0,1.1,0.9,1.9,1.9,1.9h57.8
+    		c0.5,0,1,0.2,1.4,0.6C210.2,1069.5,210.4,1070,210.4,1070.6z"/>
+    	<path class="st0" d="M109.1,1009.7v7.8c0,1.1-0.9,1.9-1.9,1.9h-39c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.8-0.6-1.4
+    		c0-1.1,0.9-2,1.9-2h31.2c1.1,0,1.9-0.9,1.9-1.9c0-1.1-0.9-1.9-1.9-1.9H41.5c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.8-0.6-1.4
+    		c0-1.1,0.9-1.9,1.9-1.9h65.6C108.2,1007.7,109.1,1008.6,109.1,1009.7z"/>
+    	<path class="st0" d="M189.5,955.8c0,0.5-0.2,1-0.6,1.4c-0.4,0.3-0.8,0.6-1.4,0.6h-39.3c-1.1,0-1.9,0.9-1.9,1.9
+    		c0,1.1,0.9,1.9,1.9,1.9h31.2c1.1,0,1.9,0.9,1.9,2c0,0.5-0.2,1-0.6,1.4c-0.3,0.4-0.8,0.6-1.4,0.6h-39c-1.1,0-1.9-0.9-1.9-1.9v-7.8
+    		c0-1.1,0.9-1.9,1.9-1.9h47.1C188.6,953.9,189.5,954.7,189.5,955.8z"/>
+    </g>
+    <g>
+    	<path class="st0" d="M137.4,159.1h25.1v-12.9c0-1.4-1.4-2.6-3-2.6h-50.1c-2.6,0-4.7-2.1-4.7-4.7v-7.7c0-2.6,2.1-4.7,4.7-4.7h37.1
+    		c1.8,0,3-1.4,3.2-2.6l0.2-28.1c0.2-1.2-0.8-2.6-2.6-2.6h-37.8c-2.6,0-4.7-2.1-4.7-4.7v-6.5c0-2.6,2.1-4.7,4.7-4.7h43.2
+    		c4.2,0,7.7-3.4,7.7-7.7V56H131c-1.1,0-1.9-0.9-1.9-1.9c0-1.1,0.9-1.9,1.9-1.9h29.3v-8c0-1.4-1.4-2.8-3.2-2.8H70.5
+    		c-4.1,0-7.5,3.3-7.5,7.5V106h23c1.1,0,1.9,0.9,1.9,1.9c0,1.1-0.9,1.9-1.9,1.9h-23v65.6c0,1.2,0.4,2.3,1.2,3.2c0.6,0.6,1.3,1,2,1
+    		h93.2c1.6,0,3-1.4,3-2.8V163h-25.1c-1.1,0-1.9-0.9-1.9-1.9C135.5,160,136.3,159.1,137.4,159.1z" filter="url(#shadow3)"/>
+    	<path class="st0" d="M168.2,164.9c0,1.1-0.9,1.9-1.9,1.9h-36.7c-1.1,0-1.9-0.9-1.9-1.9v-7.8c0-1.1,0.9-1.9,1.9-1.9h39
+    		c0.5,0,1,0.2,1.4,0.6c0.4,0.4,0.6,0.8,0.6,1.4c0,1.1-0.9,2-1.9,2h-31.2c-1.1,0-1.9,0.9-1.9,1.9c0,1.1,0.9,1.9,1.9,1.9h28.9
+    		c0.5,0,1,0.2,1.4,0.6C168,163.9,168.2,164.4,168.2,164.9z"/>
+    	<path class="st0" d="M95.8,104.1v7.8c0,1.1-0.9,1.9-1.9,1.9h-39c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.8-0.6-1.4c0-1.1,0.9-2,1.9-2
+    		h31.2c1.1,0,1.9-0.9,1.9-1.9c0-1.1-0.9-1.9-1.9-1.9H56.5c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.8-0.6-1.4c0-1.1,0.9-1.9,1.9-1.9
+    		h37.4C95,102.1,95.8,103,95.8,104.1z"/>
+    	<path class="st0" d="M166.2,50.2c0,0.5-0.2,1-0.6,1.4c-0.4,0.3-0.8,0.6-1.4,0.6H135c-1.1,0-1.9,0.9-1.9,1.9c0,1.1,0.9,1.9,1.9,1.9
+    		h28.2c1.1,0,1.9,0.9,1.9,2c0,0.5-0.2,1-0.6,1.4c-0.3,0.4-0.8,0.6-1.4,0.6h-36c-1.1,0-1.9-0.9-1.9-1.9v-7.8c0-1.1,0.9-1.9,1.9-1.9
+    		h37C165.3,48.2,166.2,49.1,166.2,50.2z"/>
+    </g>
+    <path class="st0" id="e-1" d="M183.1,52.1h-22.7c-1.1,0-1.9-0.9-1.9-1.9v0c0-1.1,0.9-1.9,1.9-1.9h22.7c1.1,0,1.9,0.9,1.9,1.9v0
+    	C185.1,51.2,184.2,52.1,183.1,52.1z"/>
+    <path class="st0" id="e-2" d="M183.7,59.9h-22.7c-1.1,0-1.9-0.9-1.9-1.9v0c0-1.1,0.9-1.9,1.9-1.9h22.7c1.1,0,1.9,0.9,1.9,1.9v0
+    	C185.6,59.1,184.8,59.9,183.7,59.9z"/>
+    <path class="st0" id="e-3" d="M58.4,106H41.3c-1.1,0-2-0.9-2-2l0,0c0-1.1,0.9-2,2-2h17.1c1.1,0,2,0.9,2,2l0,0C60.3,105.1,59.4,106,58.4,106z"
+    	/>
+    <path class="st0" id="e-4" d="M60.5,113.8H29.7c-1.1,0-2-0.9-2-2v0c0-1.1,0.9-2,2-2h30.8c1.1,0,2,0.9,2,2v0C62.5,112.9,61.6,113.8,60.5,113.8
+    	z"/>
+    <path class="st0" id="e-5" d="M188.4,159.1h-22.3c-1.1,0-1.9-0.9-1.9-1.9l0,0c0-1.1,0.9-1.9,1.9-1.9h22.3c1.1,0,1.9,0.9,1.9,1.9l0,0
+    	C190.3,158.2,189.5,159.1,188.4,159.1z"/>
+    <path class="st0" id="e-6" d="M185.8,166.9h-22.3c-1.1,0-1.9-0.9-1.9-1.9v0c0-1.1,0.9-1.9,1.9-1.9h22.3c1.1,0,1.9,0.9,1.9,1.9v0
+    	C187.8,166,186.9,166.9,185.8,166.9z"/>
+    </svg>
+  </div>
+  <div id="U-container">
+    <svg width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 viewBox="0 0 244 190" style="enable-background:new 0 0 244 190;" xml:space="preserve">
+       <defs>
+     <filter id="shadow4" x="0" y="0" width="200%" height="200%">
+       <feDropShadow dx="10" dy="10" stdDeviation="0" flood-color="#0A0F16" flood-opacity="1" />
+     </filter>
+    </defs>
+    <style type="text/css">
+    	.st0{fill:#FFFFFF;}
+    </style>
+    <path class="st0" d="M182.1,19.8h-36.8c-1.9,0-3.6,1.7-3.6,3.6v93.2c0,9.6-5.6,15.4-15,15.4c-9.4,0-15-5.8-15-15.6v-93
+    	c0-1.9-1.5-3.6-3.6-3.6H71.4c-1.9,0-3.6,1.7-3.6,3.6v16h22.7c1.1,0,1.9,0.9,1.9,1.9c0,1.1-0.9,2-1.9,2H67.8v69.2
+    	c0.1,12.8,2.6,23.5,7.2,32.1c0.7,1.3,1.5,2.6,2.3,3.9h27.6c1.1,0,1.9,0.9,1.9,1.9c0,1.1-0.9,2-1.9,2H80.1c1.2,1.4,2.4,2.7,3.7,3.9
+    	c9.9,9.2,24.3,13.9,42.9,13.9c20.2,0,35.4-5.4,45.2-15.9c1.2-1.2,2.3-2.5,3.3-3.9h-22.5c-1.1,0-1.9-0.9-1.9-2c0-1.1,0.9-1.9,1.9-1.9
+    	h25.1c0.7-1.3,1.4-2.5,2.1-3.9c3.9-8.3,5.9-18.3,5.9-30.1V61.4h-23.4c-1.1,0-1.9-0.9-1.9-2c0-1.1,0.9-1.9,1.9-1.9h23.4V23.4
+    	C185.7,21.5,184.3,19.8,182.1,19.8z"  filter="url(#shadow4)"/>
+    <path class="st0" d="M182.5,152.4c0,1.1-0.9,1.9-1.9,1.9H145c-1.1,0-1.9-0.9-1.9-1.9v-7.8c0-1.1,0.9-1.9,1.9-1.9h39
+    	c0.5,0,1,0.2,1.4,0.6c0.4,0.4,0.6,0.8,0.6,1.4c0,1.1-0.9,2-1.9,2h-31.2c-1.1,0-1.9,0.9-1.9,1.9c0,1.1,0.9,2,1.9,2h27.8
+    	c0.5,0,1,0.2,1.4,0.6C182.3,151.3,182.5,151.8,182.5,152.4z"/>
+    <path class="st0" d="M114.5,146.5v7.8c0,1.1-0.9,1.9-1.9,1.9h-39c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.8-0.6-1.4c0-1.1,0.9-2,2-2
+    	h31.2c1.1,0,1.9-0.9,1.9-2c0-1.1-0.9-1.9-1.9-1.9H68.7c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.8-0.6-1.4c0-1.1,0.9-1.9,1.9-1.9h43.9
+    	C113.7,144.6,114.5,145.5,114.5,146.5z"/>
+    <path class="st0" d="M100.2,37.5v7.8c0,1.1-0.9,1.9-1.9,1.9h-39c-0.5,0-1-0.2-1.4-0.6c-0.3-0.4-0.6-0.8-0.6-1.4c0-1.1,0.9-2,1.9-2
+    	h31.2c1.1,0,1.9-0.9,1.9-2c0-1.1-0.9-1.9-1.9-1.9H60.2c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.8-0.6-1.4c0-1.1,0.9-1.9,1.9-1.9h38
+    	C99.3,35.5,100.2,36.4,100.2,37.5z"/>
+    <path class="st0" d="M193.2,55.6c0,0.5-0.2,1-0.6,1.4c-0.4,0.3-0.8,0.6-1.4,0.6h-28.9c-1.1,0-1.9,0.9-1.9,1.9c0,1.1,0.9,2,1.9,2
+    	h31.2c1.1,0,1.9,0.9,1.9,2c0,0.5-0.2,1-0.6,1.4c-0.3,0.3-0.8,0.6-1.4,0.6h-39c-1.1,0-1.9-0.9-1.9-2v-7.8c0-1.1,0.9-2,1.9-2h36.7
+    	C192.3,53.6,193.2,54.5,193.2,55.6z"/>
+    <path id="u-1" class="st0" d="M64.1,39.4h-24c-1.1,0-1.9-0.9-1.9-1.9v0c0-1.1,0.9-1.9,1.9-1.9h24c1.1,0,1.9,0.9,1.9,1.9v0
+    	C66.1,38.6,65.2,39.4,64.1,39.4z"/>
+    <path id="u-2" class="st0" d="M70.2,47.2h-24c-1.1,0-1.9-0.9-1.9-1.9v0c0-1.1,0.9-1.9,1.9-1.9h24c1.1,0,1.9,0.9,1.9,1.9v0
+    	C72.1,46.3,71.3,47.2,70.2,47.2z"/>
+    <path id="u-3" class="st0" d="M200.3,57.5h-24c-1.1,0-1.9-0.9-1.9-1.9v0c0-1.1,0.9-1.9,1.9-1.9h24c1.1,0,1.9,0.9,1.9,1.9v0
+    	C202.2,56.7,201.4,57.5,200.3,57.5z"/>
+    <path id="u-4" class="st0" d="M203.9,65.3h-24c-1.1,0-1.9-0.9-1.9-1.9v0c0-1.1,0.9-1.9,1.9-1.9h24c1.1,0,1.9,0.9,1.9,1.9v0
+    	C205.8,64.5,204.9,65.3,203.9,65.3z"/>
+    <path id="u-5" class="st0" d="M191.9,146.5h-24c-1.1,0-1.9-0.9-1.9-1.9l0,0c0-1.1,0.9-1.9,1.9-1.9h24c1.1,0,1.9,0.9,1.9,1.9l0,0
+    	C193.8,145.6,192.9,146.5,191.9,146.5z"/>
+    <path id="u-6" class="st0" d="M202,154.3h-24c-1.1,0-1.9-0.9-1.9-1.9l0,0c0-1.1,0.9-1.9,1.9-1.9h24c1.1,0,1.9,0.9,1.9,1.9l0,0
+    	C204,153.4,203.1,154.3,202,154.3z"/>
+    <path id="u-7" class="st0" d="M74,156.3h-24c-1.1,0-1.9-0.9-1.9-1.9l0,0c0-1.1,0.9-1.9,1.9-1.9h24c1.1,0,1.9,0.9,1.9,1.9l0,0
+    	C76,155.4,75.1,156.3,74,156.3z"/>
+    <path id="u-8" class="st0" d="M81.2,148.5h-24c-1.1,0-1.9-0.9-1.9-1.9l0,0c0-1.1,0.9-1.9,1.9-1.9h24c1.1,0,1.9,0.9,1.9,1.9l0,0
+    	C83.2,147.6,82.3,148.5,81.2,148.5z"/>
+    </svg>
+  </div>
+  <div id="P-container">
+    <svg width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 viewBox="0 0 246 180" style="enable-background:new 0 0 246 180;" xml:space="preserve">
+       <defs>
+     <filter id="shadow5" x="0" y="0" width="200%" height="200%">
+       <feDropShadow dx="10" dy="10" stdDeviation="0" flood-color="#0A0F16" flood-opacity="1" />
+     </filter>
+    </defs>
+    <style type="text/css">
+    	.st0{fill:#FFFFFF;}
+    </style>
+    <path class="st0" d="M176.7,108.3c0,0.5-0.2,1-0.6,1.4c-0.4,0.3-0.8,0.6-1.4,0.6h-47.2c-1.1,0-1.9,0.9-1.9,1.9c0,1.1,0.9,2,1.9,2h11
+    	c1.1,0,1.9,0.9,1.9,2c0,0.5-0.2,1-0.6,1.4c-0.3,0.3-0.8,0.6-1.4,0.6h-18.8c-0.2,0-0.4,0-0.6-0.1c-0.8-0.3-1.3-1-1.3-1.8v-7.8
+    	c0-1.1,0.9-2,1.9-2h55c0.3,0,0.6,0.1,0.9,0.2C176.2,106.9,176.7,107.6,176.7,108.3z"/>
+    <path class="st0" d="M157.7,20.6c0,1.2-0.5,2.2-1.2,3c-0.8,0.8-1.8,1.2-3,1.2h-16.7c-2.3,0-4.2,1.9-4.2,4.2c0,2.3,1.9,4.2,4.2,4.2
+    	h67.2c2.3,0,4.2,1.9,4.2,4.2c0,1.2-0.5,2.2-1.2,3c-0.8,0.8-1.8,1.2-3,1.2h-84c-2.3,0-4.2-1.9-4.2-4.2V20.6c0-2,1.4-3.7,3.2-4.1
+    	c0.3-0.1,0.6-0.1,1-0.1h33.5C155.8,16.4,157.7,18.2,157.7,20.6z"/>
+    <path class="st0" d="M180.2,41.6c-1.8-3-3.9-5.9-6.4-8.4h-37.1c-2.3,0-4.2-1.9-4.2-4.2c0-2.3,1.9-4.2,4.2-4.2l16.9-3.3
+    	c-9.5-5.3-12.4-5-26.6-5H76.8c-1.5,0-3,1.5-3,3.2V75h26c1.3,0,2.4,1.1,2.4,2.4c0,1.3-1,2.4-2.4,2.4h-26v77.8H58.5
+    	c-0.8,0-1.6,0.3-2.1,0.9c-0.5,0.6-0.9,1.3-0.9,2.1c0,1.7,1.3,3,3,3h67c0.8,0,1.6-0.3,2.1-0.9c0.5-0.5,0.9-1.3,0.9-2.1
+    	c0-1.6-1.3-3-3-3h-7.2V118h8.7c9.5,0-2.1-1.3,5.3-3.8h-4.9c-1.1,0-1.9-0.9-1.9-1.9c0-1.1,0.9-2,1.9-2h34.3c2.1-1.1,4.1-2.4,5.9-3.7
+    	c12.3-8.9,19.1-22.6,19.1-39.4C186.8,57.5,184.5,48.9,180.2,41.6z M129,79.8h-11.1V54.7H129c7.5,0,12.6,5.1,12.6,12.6
+    	C141.6,74.7,136.5,79.8,129,79.8z" filter="url(#shadow5)"/>
+    <path id="p-1" class="st0" d="M153,24.8h-33.2c-2.3,0-4.2-1.9-4.2-4.2v0c0-2.3,1.9-4.2,4.2-4.2H153c2.3,0,4.2,1.9,4.2,4.2v0
+    	C157.2,22.9,155.3,24.8,153,24.8z"/>
+    <path id="p-2" class="st0" d="M216.1,41.6h-46.6c-2.3,0-4.2-1.9-4.2-4.2v0c0-2.3,1.9-4.2,4.2-4.2h46.6c2.3,0,4.2,1.9,4.2,4.2v0
+    	C220.3,39.7,218.4,41.6,216.1,41.6z"/>
+    <path id="p-3" class="st0" d="M132.4,118.1h-19.7c-1.1,0-2-0.9-2-2v0c0-1.1,0.9-2,2-2h19.7c1.1,0,1.9,0.9,1.9,2l0,0
+    	C134.4,117.2,133.5,118.1,132.4,118.1z"/>
+    <path id="p-4" class="st0" d="M167.1,110.3h-19.7c-1.1,0-2-0.9-2-2l0,0c0-1.1,0.9-2,2-2h19.7c1.1,0,2,0.9,2,2l0,0
+    	C169,109.4,168.1,110.3,167.1,110.3z"/>
+    <path id="p-5" class="st0" d="M133.1,163.6h-30.6c-1.7,0-3-1.3-3-3v0c0-1.6,1.3-3,3-3h30.6c1.7,0,3,1.4,3,3v0
+    	C136.1,162.3,134.7,163.6,133.1,163.6z"/>
+    <path id="p-6" class="st0" d="M73.6,163.6H42.9c-1.7,0-3-1.3-3-3v0c0-1.6,1.3-3,3-3h30.6c1.6,0,3,1.4,3,3v0C76.6,162.3,75.2,163.6,73.6,163.6
+    	z"/>
+    </svg>
+  </div>
+  <div id="decoration">
+    <svg width="1200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 viewBox="0 0 238 129" style="enable-background:new 0 0 238 129;" xml:space="preserve">
+       <defs>
+     <filter id="shadow6" x="0" y="0" width="200%" height="200%">
+       <feDropShadow dx="2" dy="2" stdDeviation="0" flood-color="#0A0F16" flood-opacity="1" />
+     </filter>
+    </defs>
+    <style type="text/css">
+    	.st0{fill:#FFFFFF;}
+    </style>
+    <circle filter="url(#shadow6)" class="st0" cx="104.2" cy="43.1" r="2.7"/>
+    <circle filter="url(#shadow6)" class="st0" cx="164.2" cy="101.5" r="1.1"/>
+    <circle filter="url(#shadow6)" class="st0" cx="199.4" cy="98.8" r="4.1"/>
+    <circle filter="url(#shadow6)" class="st0" cx="122.4" cy="105.4" r="7"/>
+    <circle filter="url(#shadow6)" class="st0" cx="138.5" cy="32.6" r="7.2"/>
+    <path filter="url(#shadow6)" class="st0" d="M179.5,53.3h-65.1c-0.7,0-1.2-0.5-1.2-1.2v0c0-0.7,0.5-1.2,1.2-1.2h65.1c0.7,0,1.2,0.5,1.2,1.2v0
+    	C180.7,52.7,180.1,53.3,179.5,53.3z"/>
+    <path filter="url(#shadow6)" class="st0" d="M93.8,103.9H28.8c-0.7,0-1.2-0.5-1.2-1.2l0,0c0-0.7,0.5-1.2,1.2-1.2h65.1c0.7,0,1.2,0.5,1.2,1.2l0,0
+    	C95.1,103.3,94.5,103.9,93.8,103.9z"/>
+    <path filter="url(#shadow6)" class="st0" d="M207.7,24.4L207.7,24.4c-0.3-0.1-0.7-0.1-1-0.1c0,0,0,0,0,0c-0.1-0.3-0.2-0.6-0.4-1l0,0
+    	c-2.2-4.4-8.5-4.4-10.7,0l0,0c-0.2,0.3-0.3,0.6-0.4,0.9c0,0,0,0,0,0c-0.3,0-0.7,0-1,0.1h0c-4.8,0.8-6.7,6.7-3.3,10.2l0,0
+    	c0.2,0.3,0.5,0.5,0.8,0.7c0,0,0,0,0,0c-0.1,0.3-0.2,0.7-0.2,1v0c-0.7,4.8,4.3,8.5,8.7,6.3l0,0c0.3-0.2,0.6-0.3,0.9-0.5c0,0,0,0,0,0
+    	c0.3,0.2,0.6,0.4,0.9,0.5h0c4.4,2.2,9.4-1.5,8.7-6.3v0c-0.1-0.3-0.1-0.7-0.2-1c0,0,0,0,0,0c0.3-0.2,0.5-0.4,0.8-0.7l0,0
+    	C214.4,31.1,212.5,25.2,207.7,24.4z"/>
+    </svg>
+  </div>
+</div>
+
+    <script type="text/javascript">
+      function myFunction(){
+        document.getElementById("big-1").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("big-2").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("big-3").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("big-4").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("big-5").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("big-6").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("small-1").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("small-2").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("small-3").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("small-4").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+
+        document.getElementById("n-1").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("n-2").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("n-3").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("n-4").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("n-5").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+
+        document.getElementById("e-1").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("e-2").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("e-3").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("e-4").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("e-5").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("e-6").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+
+        document.getElementById("u-1").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("u-2").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("u-3").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("u-4").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("u-5").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("u-6").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("u-7").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("u-8").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+
+        document.getElementById("p-1").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("p-2").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("p-3").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("p-4").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("p-5").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+        document.getElementById("p-6").style.animationDuration = (Math.floor(Math.random() * 11) + 5) + "s";
+
+      }
+    </script>
+  </body>
+</html>
